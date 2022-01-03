@@ -49,3 +49,9 @@ ul li a:hover {
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; 
 */
+
+.content {
+    background-color: powderblue;
+    height: 400px;
+    padding: 2rem;
+}
