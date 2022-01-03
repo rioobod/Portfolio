@@ -28,6 +28,9 @@ ul li a {
     color: white;
     padding: 0 16px;
 }
+ul li a:hover {
+    color: red;
+}
 
 /* 
 font-family: 'Montserrat', sans-serif;
