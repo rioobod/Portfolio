@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header nav {
+    width: 100vw;
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    background-color: red;
+    padding: 16px;
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+ul li {
+    padding: 0 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero {
+    height: 400px;
+    background-image: url("../assets/images/technology.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#hero-subtitle {
+    position: absolute;
+    bottom: 10%;
+    right: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+#about,
+#work {
+    padding: 24px;
+    height: 700px;
+    background-color: cadetblue;
+
+}
+
+#about-paragraph,
+#contact-paragraph {
+    /* width: 90%; */
+    padding: 24px;
+    line-height: 32px;
+}
+
+#app1, #app2, #app3, #app4, #app5 {
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0.8;
+}
+#app1 {
+    background-image: url("../assets/images/adi-goldstein.jpg");
+}
+#app2 {
+    background-image: url("../assets/images/daniel-josef.jpg");
+}
+#app3 {
+    background-image: url("../assets/images/domenico.jpg");
+}
+#app4 {
+    background-image: url("../assets/images/technology.jpg");
+}
+#app5 {
+    background-image: url("../assets/images/tezos.jpg");
+}
+
+#app1:hover,
+#app2:hover,
+#app3:hover,
+#app4:hover,
+#app5:hover {
+opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: 425px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+        align-items: center;
+
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    #logo {
+        width: 100%;
+    }  
+    .content {
+        display: flex;
+    }
+ 
+  
+    
+}
+
+@media screen and (min-width: 768px) {
+    .content-heading {
+        width: 300px;
+    }
+    #about {
+        /* display: flex; */
+    }
+    #about-paragraph {
+        /* width: 700px; */
+    }
+}

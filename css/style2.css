@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    min-width: 320px;
+    /* max-width: 768px; */
+}
+
+nav {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    padding: 18px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    /* height: calc(100vh - 57px); */
+    background-color: black;
+    justify-content: space-around;
+}
+
+ul li {
+    padding: 0 18px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color: red;
+}
+
+#logo:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.content {
+    background-color: powderblue;
+    /* height: 617px;   */
+    padding: 24px;
+}
+
+.content-heading {
+    /* width: 200px; */
+    border-bottom: 2px solid black;
+    margin-bottom: 16px;
+    /* line-height: 12px; */
+}
+
+#hero {
+    height: 617px;
+    background-image: url("../assets/images/technology.jpg");
+    background-size: cover;
+    position: relative;
+    
+}
+
+#hero-subtitle {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+/* #about, #work {
+    padding: 24px;
+
+} */
+#about-paragraph {
+    line-height: 24px;
+}
+
+#work-section {
+    width: 100%;
+}
+#app1, #app2, #app3, #app4, #app5 {
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0.8;
+    height: 317px;
+    /* height: 100%; */
+}
+
+#app1 {
+    background-image: url("../assets/images/adi-goldstein.jpg");
+}
+#app2 {
+    background-image: url("../assets/images/daniel-josef.jpg");
+}
+#app3 {
+    background-image: url("../assets/images/domenico.jpg");
+}
+#app4 {
+    background-image: url("../assets/images/technology.jpg");
+}
+#app5 {
+    background-image: url("../assets/images/tezos.jpg");
+}
+
+#app1:hover,
+#app2:hover,
+#app3:hover,
+#app4:hover,
+#app5:hover {
+opacity: 1;
+}
+
+.app {
+    /* width: 100%; */
+    /* height: 550px; */
+    /* margin: 16px; */
+    font-size: 50px;
+    /* position: relative; */
+    /* border: 6px solid red; */
+}
+.apps {
+    /* width: 100%; */
+    /* height: 200px; */
+    /* margin: 16px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    font-size: 50px;
+}
+
+#app1 {
+    background-color: green;
+}
+.apps2 {
+    /* width: 49%; */
+    background-color: green;
+    /* position: relative; */
+    /* border: 6px solid red; */
+}
+.app3 {
+    /* position: absolute; */
+    background-color: red;
+    display: inline-block;
+    bottom: 10%;
+    padding: 8px 16px;
+}
+
+#contact-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  @media screen and (max-width: 768px) {
+  #container {
+width: 100vw;
+height: 100vh;
+background-color: red;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+ul {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+ul li {
+     padding: 0 16px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+   border-bottom: 2px solid white;
+    cursor: pointer;
+}
+ul li a:hover {
+    color: red;
+}
+#logo {
+    background-color: orangered;
+    padding: 16px 8px;
+}
+#logo:hover {
+    color:powderblue;
+    cursor: pointer;
+}
+
+.content {
+    background-color: powderblue;
+    padding: 24px;
+    display: flex;
+}
+.content-heading {
+    border-right: 3px solid black;
+    width: 200px;   
+}
+#hero {
+    height: 400px;
+    background-image: url("../assets/images/technology.jpg");
+    background-size: cover;
+    position: relative;
+}
+#hero-subtitle {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+#about-paragraph, #contact-paragraph {
+    width: 90%;
+    padding: 24px;
+}
+#contact-paragraph {
+    display: flex;
+    justify-content: space-between;
+}
+#work-section {
+    width: 90%;
+}
+.app {
+    width: 100%;
+    height: 550px;
+    margin: 16px;
+    font-size: 50px;
+    position: relative;
+    border: 6px solid red;
+}
+
+.apps {
+    width: 100%;
+    height: 200px;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+}
+.apps2 {
+    width: 49%;
+    background-color: green;
+    position: relative;
+    border: 6px solid red;
+}
+.app3 {
+    position: absolute;
+    background-color: red;
+    display: inline-block;
+    bottom: 10%;
+    padding: 8px 16px;
+}
+#app1 {
+    background-color: green;
+}
+
+.contact-links {
+    color: black;
+    font-size: 18px;
+    padding: 0 16px;  
+    font-weight: Medium;
+}
+
+#app1, #app2, #app3, #app4, #app5 {
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0.8;
+}
+#app1 {
+    background-image: url("../assets/images/adi-goldstein.jpg");
+}
+#app2 {
+    background-image: url("../assets/images/daniel-josef.jpg");
+}
+#app3 {
+    background-image: url("../assets/images/domenico.jpg");
+}
+#app4 {
+    background-image: url("../assets/images/technology.jpg");
+}
+#app5 {
+    background-image: url("../assets/images/tezos.jpg");
+}
+
+#app1:hover,
+#app2:hover,
+#app3:hover,
+#app4:hover,
+#app5:hover {
+opacity: 1;
+}
+
+}
+
