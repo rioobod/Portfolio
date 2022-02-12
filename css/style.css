@@ -84,7 +84,7 @@ ul li a:hover {
     width: 100%;
     height: 550px;
     margin: 16px;
-    font-size: 50px;
+    font-size: 30px;
     position: relative;
     border: 6px solid red;
 }
@@ -95,7 +95,7 @@ ul li a:hover {
     margin: 16px;
     display: flex;
     justify-content: space-between;
-    font-size: 50px;
+    font-size: 30px;
 }
 .apps2 {
     width: 49%;
